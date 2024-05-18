@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.div_icon {
+    display: grid;
+    justify-content: center;
+}
+
+.icon {
+   width: 70px;
+   height: 70px;
+   justify-self: center;
+}
+
+div {
+    border: 1px solid black;
+}
+
+section {
+    margin-bottom: 8%;
+}
+
+header {
+    margin-bottom: 5%;
+}
+
+.footer_logo {
+    width: 60px;
+    height: 60px;
+}
+
+.ul_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 17vh;
+}
