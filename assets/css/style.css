@@ -62,7 +62,6 @@ div button:hover {
 
 body.container-fluid {
     background-color: #171B2A;
-    /* padding: 0; */
 }
 
 .div_icon {
@@ -120,10 +119,6 @@ section {
     margin-bottom: 8%;
 }
 
-/* section div {
-    background: #1D2033;
-} */
-
 section div img {
     width: 100%;
     margin-top: 3%;
@@ -162,8 +157,73 @@ section div p {
     gap: 17vh;
 }
 
+.ul_footer img {
+    border-radius: 30%;
+}
+
 footer.container-fluid {
     margin: 0;
     background: #000000;
     opacity: 0.7;
+}
+
+.section_contacto{
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    width: 60vw;
+}
+
+.ta {
+    text-align: start;
+}
+
+.div_check {
+    text-shadow: 2px 2px 8px black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #1D2033;
+    border-radius: 4px;
+}
+
+form .btn {
+    width: 50%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_contacto {
+    background: #1D2033;
+    width: 50vw;
+    box-shadow: 0 1px 10px #000000;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+div.form-check {
+    display: flex;
+    align-items: start;
+}
+
+#check1, #check2, #check3 {
+    margin-left: 1%;
+    margin-right: 4%;
+}
+
+.form-floating label {
+color: #595C5F;
+}
+
+.div_contacto h5 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 1.6em;
+    color: #FFFFFF;
+}
+
+.div_contacto h6 b{
+    margin-right: 0.5%;
 }

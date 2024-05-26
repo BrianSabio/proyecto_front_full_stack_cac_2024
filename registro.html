@@ -40,8 +40,36 @@
             </div>
             <div>
                 <h3>Formulario</h3>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est tenetur nulla magni itaque veritatis fugit animi quasi exercitationem quia.</p>
+                <div class="container-fluid">
+                    <form action="" class="row g-3 mx-auto">
+                        <div class="ta">
+                            <label for="name_input" class="form-label">Nombre completo</label>
+                            <input type="text" name="name" id="name_input" class="form-control ta" placeholder="Juan Perez">
+                        </div>
+                        <div class="ta">
+                            <label for="email_input" class="form-label">Email</label>
+                            <input type="email" name="email" id="email_input" class="form-control ta" placeholder="juanperez@ejemplo.com">
+                        </div>
+                        <div class="div_check">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="consultoria">
+                                <label class="form-check-label" for="check1">Servicio de consultoría</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="auditoria">
+                                <label class="form-check-label" for="check2">Servicio de auditoría</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check3" name="option3" value="cursos">
+                                <label class="form-check-label" for="check3">Cursos (próximamente)</label>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="comments" name="text" placeholder="Comentarios"></textarea>
+                            <label for="comments">Comentarios</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
             </div>
         </section>
