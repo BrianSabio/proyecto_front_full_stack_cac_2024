@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="/assets/js/validation.js"></script>
 </head>
 <body class="container-fluid">
     <header class="row">
@@ -41,7 +42,7 @@
             <div>
                 <h3>Formulario</h3>
                 <div class="container-fluid">
-                    <form action="" class="row g-3 mx-auto">
+                    <form class="row g-3 mx-auto">
                         <div class="ta">
                             <label for="name_input" class="form-label">Nombre completo</label>
                             <input type="text" name="name" id="name_input" class="form-control ta" placeholder="Juan Perez">
@@ -52,24 +53,43 @@
                         </div>
                         <div class="div_check">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="consultoria">
+                                <input type="checkbox" class="form-check-input" id="check1" name="checkboxes" value="consultoria">
                                 <label class="form-check-label" for="check1">Servicio de consultoría</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="auditoria">
+                                <input type="checkbox" class="form-check-input" id="check2" name="checkboxes" value="auditoria">
                                 <label class="form-check-label" for="check2">Servicio de auditoría</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="check3" name="option3" value="cursos">
+                                <input type="checkbox" class="form-check-input" id="check3" name="checkboxes" value="cursos">
                                 <label class="form-check-label" for="check3">Cursos (próximamente)</label>
                             </div>
+                        </div>
+                        <div>
+                            <select class="form-select" id="country" name="country">
+                                <option value="" disabled selected hidden>Selecciona tu país de residencia</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="peru">Perú</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="otro">Otro</option>
+                            </select>
                         </div>
                         <div class="form-floating">
                             <textarea class="form-control" id="comments" name="text" placeholder="Comentarios"></textarea>
                             <label for="comments">Comentarios</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="form-group div_check">
+                            <label for="image"><b>(opcional)</b> Selecciona una imagen: </label><br><br>
+                            <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
                     </form>
+                    <p id="error" style="color: red; display: none; margin-top: 2%; animation: fadeOut 10s ease-in forwards;">Por favor, completa todos los campos</p>
                 </div>
             </div>
         </section>

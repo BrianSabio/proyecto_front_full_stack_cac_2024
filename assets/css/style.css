@@ -213,6 +213,14 @@ div.form-check {
     margin-right: 4%;
 }
 
+select option {
+    color: #222324;
+}
+
+#comments {
+    height: 150px;
+}
+
 .form-floating label {
 color: #595C5F;
 }
@@ -226,4 +234,14 @@ color: #595C5F;
 
 .div_contacto h6 b{
     margin-right: 0.5%;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
